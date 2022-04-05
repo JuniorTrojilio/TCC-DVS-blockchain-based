@@ -8,13 +8,14 @@
 \usepackage{ifxetex}
     \ifxetex{}
         \usepackage{fontspec}
+        \setmainfont{Arial}
         \defaultfontfeatures{Ligatures={TeX}}
     \else
         \usepackage[utf8]{inputenc}
         \usepackage[T1]{fontenc}
     \fi
 
-\usepackage{lmodern} % Fonte
+\usepackage{helvet} % Fonte
 \usepackage{multirow} % Suporte a multilinha em tabelas
 \usepackage{csquotes} % Apóstrofos corretos
 \usepackage{indentfirst} % Indenta o primeiro parágrafo de cada seção.
@@ -26,7 +27,7 @@
 \SetWatermarkText{\input{feitep/logo/FEITEP-nolettering-15a.eps_tex}}
 \SetWatermarkAngle{0}
 
-\renewcommand{\ABNTEXchapterfont}{\fontfamily{lmr}\selectfont}
+\renewcommand{\familydefault}{\sfdefault}
 
 % Margens e espaçamentos da ABNT
 \setlength{\parindent}{1.3cm}
